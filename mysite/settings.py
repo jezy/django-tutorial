@@ -25,7 +25,7 @@ SECRET_KEY = 'p3w(c@1j(i)j#v#enclj7xucv9xjwe7f!q4zzuefa@!=lc6w#v'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['kl', 'localhost']
+ALLOWED_HOSTS = ['kl', 'localhost', 'python.1kb.pl', 'perun']
 
 
 # Application definition
@@ -85,7 +85,7 @@ DATABASES = {
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
 
-AUTH_PASSWORD_VALIDATORS = [ ] 
+AUTH_PASSWORD_VALIDATORS = [ ]
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
