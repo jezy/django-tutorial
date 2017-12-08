@@ -7,7 +7,7 @@ class JOJKO(admin.ModelAdmin):
             'pub_date',
             'choices_count')
     def choices_count(self, obj):
-        return obj.qqs.count()
+        return obj.choice_set.count()
 
 
 
@@ -19,7 +19,7 @@ class CAdmin(admin.ModelAdmin):
     def zresetuj(self, request, queryset):
         ile = queryset.update(votes=0)
         self.message_user(
-                request, 
+                request,
                 "zresetowano %s odpowiedzi." % ile)
     zresetuj.short_description = "Zresetuj odpowiedzi"
 
