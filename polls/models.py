@@ -7,7 +7,7 @@ class Question(models.Model):
         return self.question_text
 
 class Choice(models.Model):
-    question = models.ForeignKey(Question, on_delete=models.CASCADE, related_name='qqs')
+    question = models.ForeignKey(Question, on_delete=models.CASCADE, related_name='choice_set')
     choice_text = models.CharField(max_length=200)
     pub_date = models.DateTimeField('date published')
     votes = models.IntegerField(default=0)
