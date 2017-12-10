@@ -1,3 +1,5 @@
 # Official Django Tutorial code (2.0)
 
-## start
+## Start
+
+Go to url: https://docs.djangoproject.com/en/2.0/intro/tutorial01/
